@@ -99,8 +99,7 @@ int main(void)
     {
         // Program execution remains here.
     }
-
-    return 0; // This line is never reached in an embedded application.
+    
 }
 
 /*============================================================================*/
@@ -208,3 +207,4 @@ void LCD_Init(void)
     LCD_SendCommand(LCD_ENTRY_MODE_SET | 0x02);  // Entry Mode Set: Increment cursor, no display shift
     LCD_SendCommand(LCD_RETURN_HOME);            // Return cursor to home position (0,0)
 }
+
